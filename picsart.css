@@ -1,0 +1,107 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+/* border: 1px solid red; */
+}
+body {
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   font-family: Sans-Serif;
+   background-color: #ecc19c;
+}
+ul {
+   list-style-type: none;
+   display: grid;
+   grid-template-columns: 80px 80px 80px;
+   place-items: center;
+   place-content: center;
+}
+
+
+li {
+   border: 2px solid  #1e847f;
+   width: 80px;
+   height: 80px;
+   display: grid;
+   place-content: center;
+   font-size: 4rem;
+   color: #000000;
+   
+}
+.bl{
+   border-left: none;
+}
+.bt{
+   border-top: none;
+}
+.br{
+   border-right: none;
+}
+.bb{
+   border-bottom: none;
+}
+.active-player {
+   color: #ecc19c;
+   background-color:  #1e847f;
+   border: 2px solid  #1e847f ;
+   padding: .5rem 1rem;
+   font-weight: 900;
+}
+button {
+   border: 2px solid  #1e847f ;
+   padding: .5rem 1rem;
+   font-weight: 900;
+   border-radius: 10px;
+   text-transform: uppercase;
+   background-color: transparent;
+   color: #1e847f;
+}
+.active{
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+li div{
+   width:80px;
+   height: 80px;
+   text-align: center;
+}
+
+.winner {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0,0,0,0.737) ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   font-weight: 900;
+   color: white ;
+   flex-direction: column;
+}
+.hide{
+   display: none ;
+}
+.winner button{
+   margin-top: 80px;
+   border: 2px solid  #1e847f ;
+   padding: .5rem 1rem;
+   font-weight: 900;
+   border-radius: 10px;
+   text-transform: uppercase;
+   background-color:   #1e847f;
+   color: #ecc19c;
+}
+.shake{
+  animation: shaking .2s linear infinite;
+}
+@keyframes shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
