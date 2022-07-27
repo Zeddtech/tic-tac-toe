@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "a tic tac toe game with a game-play like a chess",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detrinity27/tic-tac-toe.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "vanilla-javascript",
+    "Html",
+    "css"
+  ],
+  "author": "Agwunobi Sopulu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/detrinity27/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/detrinity27/tic-tac-toe#readme"
+}
